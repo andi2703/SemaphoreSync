@@ -33,7 +33,7 @@ namespace SemaphoreSync
                     {
                         stop = true;
                         s.Release();
-                        Console.WriteLine("Поток {0} блокировку снял", Thread.CurrentThread.ManagedThreadId);
+                        Console.WriteLine("{0} блокировку снял", Thread.CurrentThread.ManagedThreadId);
                     }
                 }
                 else
