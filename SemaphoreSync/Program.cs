@@ -18,7 +18,7 @@ namespace SemaphoreSync
         static void SomeMethod(object obj)
         {
             Semaphore s = obj as Semaphore;
-            bool stop = false;
+            bool stop = false;  
 
             while (!stop)
             {
@@ -37,7 +37,7 @@ namespace SemaphoreSync
                     }
                 }
                 else
-                    Console.WriteLine("Таймаут для потока {0} истек. Повторное ожидание", Thread.CurrentThread.ManagedThreadId);
+                    Console.WriteLine("Тайм для потока {0} истек. Повторное ожидание", Thread.CurrentThread.ManagedThreadId);
             }
         }
     }
